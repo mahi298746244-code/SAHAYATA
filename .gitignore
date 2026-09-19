@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+
+# Env & secrets
+.env
+*.pid
+
+# Local data (dev db, uploads, ml caches)
+backend/data/
+
+# OS junk
+.DS_Store
+Thumbs.db

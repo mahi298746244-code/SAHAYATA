@@ -1,0 +1,3 @@
+# Optional PostgreSQL driver – required when DATABASE_URL points to PostgreSQL.
+# Install with:  pip install -r requirements-postgres.txt
+psycopg[binary]>=3.2
