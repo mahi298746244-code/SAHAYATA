@@ -14,3 +14,4 @@ scikit-learn>=1.5,<1.8
 numpy>=1.26
 scipy>=1.14
 pillow>=10.4
+gunicorn
