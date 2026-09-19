@@ -1,7 +1,8 @@
 import axios from "axios";
 
-export const API = axios.create({ baseURL: "/api/v1" });
-
+export const API = axios.create({
+  baseURL: "https://sahayata-ffxv.onrender.com/api/v1",
+});
 const ACCESS = "sahayata.access";
 const REFRESH = "sahayata.refresh";
 
@@ -37,7 +38,9 @@ API.interceptors.response.use(
       original._retried = true;
       try {
         refreshing ??= axios
-          .post("/api/v1/auth/refresh", { refresh_token: tokens.refresh })
+         .post("https://sahayata-ffxv.onrender.com/api/v1/auth/refresh", {
+  refresh_token: tokens.refresh,
+})
           .then(({ data }) => {
             tokens.set(data.access_token, data.refresh_token);
           })
